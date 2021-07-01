@@ -60,8 +60,8 @@ const polybiusModule = (function () {
   
     // helper encoder function
     function _encoder(input) {
-      let message = ""; // string to br returned
-      for (let char of input) { // looks over input string letters
+      let message = ""; // string to be returned
+      for (let char of input) { // loops over input string letters
         let lowerCase = char.toLowerCase(); // makes letters lowercase
         if (lowerCase === "i" || lowerCase === "j") { // conditinal to handle i or j
           let letterIndex = '8' 
