@@ -12,7 +12,7 @@ describe("polybius encoding Check", () => {
     expect(polybius('I')).to.equal('42'); // no error
   });
   it("Should maintain spaces when encoding", () => {
-    expect(polybius('ij')).to.equal('4242'); // no error
+    expect(polybius('i j')).to.equal('42 42'); // no error
   });
 });
 describe("polybius decoding Check", () => {
